@@ -1,4 +1,5 @@
 import NotFound from 'views/sessions/NotFound'
+import teacherRoutes from 'views/teacher/TeacherRoutes'
 import StudentRoutes from 'views/Student/StudentRoutes'
 import sessionRoutes from 'views/sessions/SessionRoutes'
 import MatxLayout from '../components/MatxLayout/MatxLayout'
@@ -8,7 +9,7 @@ export const AllPages = () => {
     const all_routes = [
         {
             element: <MatxLayout />,
-            children: [...homeRoutes, ...StudentRoutes],
+            children: [...homeRoutes, ...StudentRoutes, ...teacherRoutes],
         },
         ...sessionRoutes,
         {

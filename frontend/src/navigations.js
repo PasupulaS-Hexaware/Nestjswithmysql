@@ -9,6 +9,11 @@ export const navigations = [
                 path: '/Student',
                 iconText: 'A',
             },
+            {
+                name: 'teacher',
+                path: '/teacher',
+                iconText: 'A',
+            },
         ],
     },
 ]
